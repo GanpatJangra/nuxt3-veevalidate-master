@@ -1,6 +1,6 @@
 <template>
   <Form>
-    <div
+    <div class="space-y-5 pb-5 bg-gray-300 "
       v-for="{ as, name, label, children, ...attrs } in schema.fields"
       :key="name"
     >
@@ -18,7 +18,7 @@
       </Field>
       <ErrorMessage :name="name" />
     </div>
-    <button>Submit</button>
+    <button class="bg-blue-400 px-3 mt-5 rounded-xl py-2">Submit</button>
   </Form>
 </template>
 <script>

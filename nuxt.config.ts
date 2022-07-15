@@ -7,7 +7,10 @@ export default defineNuxtConfig({
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
-    script: [],
+    script: [
+      { hid: 'stripe', src: 'https://cdn.tailwindcss.com', defer: true }
+
+    ],
     link: [
       {
         rel: "stylesheet",

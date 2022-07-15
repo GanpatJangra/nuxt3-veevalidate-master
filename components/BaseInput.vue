@@ -1,10 +1,10 @@
 <template>
   <Form :validation-schema="schema">
-    <!-- <label> {{`${name}`}} </label> -->
+    <label> {{`${name}`}} </label>
     <div style="margin-left:30px margin-right:30px">
       <Field :as="as" :name="name" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)">
       </Field>
-      <ErrorMessage style="color: white" :name="name"></ErrorMessage>
+      <ErrorMessage style="color: black" :name="name"></ErrorMessage>
     </div>
   </Form>
 </template>
